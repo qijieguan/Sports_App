@@ -1,0 +1,139 @@
+.roster {
+    padding: 5vh 0;
+    grid-template-columns: 22% 22% 22% 22%;
+    column-gap: 2vw;
+    row-gap: 2vh;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.roster-overlay {
+    position: fixed;
+    inset: 0 auto auto 0;
+    height: 100%;
+    width: 100%;
+    background: url("https://thehill.com/wp-content/uploads/sites/2/2020/08/ca_nbafound_080620getty.jpg?strip=1");
+    background-size: cover;
+    z-index: -1;
+}
+
+.team-banner {
+    position: relative;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 4vh 2vw;
+    grid-column: 1 / 3;
+    row-gap: 5vh;
+    height: 50vh;
+    width: 100%;
+    background: rgb(15, 15, 15);
+    border-radius: 1rem;
+}
+
+.team-banner > .icon-wrapper {
+    position: absolute;
+    justify-content: center;
+    top: 5%;
+    left: 2.5%;
+    column-gap: 0.25vw;
+    color: white;
+}
+.team-banner > .icon-wrapper:hover { color: gold; }
+
+.team-banner > .icon-wrapper > .icon {
+    font-size: clamp(1.25rem, 1.5vw, 1.5rem);
+}
+
+.team-banner > .icon-wrapper > span {
+    font-size: clamp(1rem, 1.25vw, 1.25rem);
+    text-transform: uppercase;
+}
+
+.team-banner img {
+    height: 75%;
+    width: 75%;
+    object-fit: contain;
+}
+
+.team-banner-info {
+    padding: 1vh 2vw;
+    justify-content: space-between;
+    padding-top: 2vh;
+    width: 100%;
+    border-top: 2px solid rgb(224, 224, 224);
+}
+
+.team-banner-info > span {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}
+
+.team-banner-info > span:nth-child(1) {
+    font-size: clamp(2rem, 2.5vw, 2.5rem);
+    letter-spacing: 1px;
+}
+.team-banner-info > span:nth-child(2) {
+    font-weight: 500;
+}
+
+.player {
+    flex-direction: column;
+    row-gap: 1vh;
+    height: 50vh;
+    width: 100%;
+    background: rgb(15, 15, 15);
+    border-radius: 0.5rem;
+}
+
+.player-image {
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s ease-in;
+}
+
+.player-info {
+    flex-direction: column;
+    align-items: flex-start;
+    column-gap: 2vw;
+    row-gap: 0.5vh;
+    color: white;
+}
+
+.player-name {
+    padding: 0.5vh 1.5vw;
+    font-weight: 500;
+    font-size: clamp(1rem, 1.25vw, 1.25rem);
+}
+
+.player-bio {
+    padding: 0.5vh 1.5vw;
+    margin-bottom: 0.25vh;
+    column-gap: 1vw;
+    color: rgb(179, 179, 179);
+}
+
+.player-stats {
+    padding: 1.5vh 1.5vw;
+    column-gap: 1vw;
+    color: white;
+    border-top: 1px solid rgb(231, 231, 231);
+}
+
+.player-stats > span {
+    font-size: clamp(0.875rem, 1vw, 1rem);
+    font-weight: 500;
+}
+
+.player-stats > span.high { color: gold; }
+
+@media (max-width: 50rem) {
+    .roster { grid-template-columns: 45% 45%; }
+    
+}
+
+@media (max-width: 25rem) {
+    .roster { grid-template-columns: 95%; }
+    .team-banner { grid-column: 1 / 2; }
+}

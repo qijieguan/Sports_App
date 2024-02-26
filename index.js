@@ -17,9 +17,9 @@ app.use(cors(corsOptions));
 app.use(express.static(path.join(__dirname, 'client/build')));
 
 
-const playersRouter = require('./routes/players');
+const teamsRouter = require('./routes/teams');
 
-app.use('/players', playersRouter);
+app.use('/teams', teamsRouter);
 
 app.get('*', (req, res) => {res.sendFile(path.join(__dirname+'/client/build/index.html'));});
 

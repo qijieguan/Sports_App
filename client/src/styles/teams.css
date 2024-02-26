@@ -1,0 +1,44 @@
+.team {
+    padding: 2vh 2vw;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2vh;
+    width: 100%;
+    background: rgb(15, 15, 15);
+    border-radius: 0.5rem;
+}
+
+.team:hover {
+    opacity: 0.4;
+}
+
+.team-logo-wrapper {
+    height: 25vh;
+}
+
+.team-logo {
+    height: 100%;
+    width: 100%;
+}
+
+.team-info {
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 1vh;
+    column-gap: 0.5vw;
+    width: 100%;
+}
+
+.team-name {
+    font-size: clamp(1rem, 1.25vw, 1.25rem);
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+.team-record {  
+    padding: 0.5vw;
+    font-size: clamp(1rem, 1.125vw, 1.125rem);
+    color: rgb(172, 172, 172); 
+}

@@ -1,0 +1,184 @@
+{
+    "Teams": [
+        {
+            "teamAbv": "ORL",
+            "teamCity": "Orlando",
+            "teamName": "Magic",
+            "nbaComLogo2" :"https://cdn.nba.com/teams/uploads/sites/1610612753/2021/12/Magic-Global-Logo-2.svg",
+            "wins": 30,
+            "loss": 15,
+            "Roster": {
+                "123": {
+                    "nbaComName":"Paolo Banchero",
+                    "nbaComHeadshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432573.png",
+                    "pos": "PF",
+                    "height":"6-10",
+                    "weight":"250",
+                    "bDay": "11/12/2002",
+                    "stats": {
+                        "pts":"23.1",
+                        "ast":"4.9",
+                        "reb":"7.2"
+                    }
+                },
+                "234": {
+                    "nbaComName":"Franz Wagner",
+                    "nbaComHeadshot":"https://cdn.nba.com/headshots/nba/latest/1040x760/1630532.png",
+                    "pos": "PF",
+                    "height":"6-10",
+                    "weight":"220",
+                    "bDay": "8/27/2001",
+                    "stats": {
+                        "pts":"20.9",
+                        "ast":"3.9",
+                        "reb":"5.8"
+                    }
+                }
+            }
+        },
+        {
+            "teamAbv": "ORL",
+            "teamCity": "Orlando",
+            "teamName": "Magic",
+            "nbaComLogo2" :"https://cdn.nba.com/teams/uploads/sites/1610612753/2021/12/Magic-Global-Logo-2.svg",
+            "wins": 30,
+            "loss": 15,
+            "Roster": {
+                "123": {
+                    "nbaComName":"Paolo Banchero",
+                    "nbaComHeadshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432573.png",
+                    "pos": "PF",
+                    "height":"6-10",
+                    "weight":"250",
+                    "bDay": "11/12/2002",
+                    "stats": {
+                        "pts":"23.1",
+                        "ast":"4.9",
+                        "reb":"7.2"
+                    }
+                },
+                "234": {
+                    "nbaComName":"Franz Wagner",
+                    "nbaComHeadshot":"https://cdn.nba.com/headshots/nba/latest/1040x760/1630532.png",
+                    "pos": "PF",
+                    "height":"6-10",
+                    "weight":"220",
+                    "bDay": "8/27/2001",
+                    "stats": {
+                        "pts":"20.9",
+                        "ast":"3.9",
+                        "reb":"5.8"
+                    }
+                }
+            }
+        },
+        {
+            "teamAbv": "ORL",
+            "teamCity": "Orlando",
+            "teamName": "Magic",
+            "nbaComLogo2" :"https://cdn.nba.com/teams/uploads/sites/1610612753/2021/12/Magic-Global-Logo-2.svg",
+            "wins": 30,
+            "loss": 15,
+            "Roster": {
+                "123": {
+                    "nbaComName":"Paolo Banchero",
+                    "nbaComHeadshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432573.png",
+                    "pos": "PF",
+                    "height":"6-10",
+                    "weight":"250",
+                    "bDay": "11/12/2002",
+                    "stats": {
+                        "pts":"23.1",
+                        "ast":"4.9",
+                        "reb":"7.2"
+                    }
+                },
+                "234": {
+                    "nbaComName":"Franz Wagner",
+                    "nbaComHeadshot":"https://cdn.nba.com/headshots/nba/latest/1040x760/1630532.png",
+                    "pos": "PF",
+                    "height":"6-10",
+                    "weight":"220",
+                    "bDay": "8/27/2001",
+                    "stats": {
+                        "pts":"20.9",
+                        "ast":"3.9",
+                        "reb":"5.8"
+                    }
+                }
+            }
+        },
+        {
+            "teamAbv": "ORL",
+            "teamCity": "Orlando",
+            "teamName": "Magic",
+            "nbaComLogo2" :"https://cdn.nba.com/teams/uploads/sites/1610612753/2021/12/Magic-Global-Logo-2.svg",
+            "wins": 30,
+            "loss": 15,
+            "Roster": {
+                "123": {
+                    "nbaComName":"Paolo Banchero",
+                    "nbaComHeadshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432573.png",
+                    "pos": "PF",
+                    "height":"6-10",
+                    "weight":"250",
+                    "bDay": "11/12/2002",
+                    "stats": {
+                        "pts":"23.1",
+                        "ast":"4.9",
+                        "reb":"7.2"
+                    }
+                },
+                "234": {
+                    "nbaComName":"Franz Wagner",
+                    "nbaComHeadshot":"https://cdn.nba.com/headshots/nba/latest/1040x760/1630532.png",
+                    "pos": "PF",
+                    "height":"6-10",
+                    "weight":"220",
+                    "bDay": "8/27/2001",
+                    "stats": {
+                        "pts":"20.9",
+                        "ast":"3.9",
+                        "reb":"5.8"
+                    }
+                }
+            }
+        },
+        {
+            "teamAbv": "ORL",
+            "teamCity": "Orlando",
+            "teamName": "Magic",
+            "nbaComLogo2" :"https://cdn.nba.com/teams/uploads/sites/1610612753/2021/12/Magic-Global-Logo-2.svg",
+            "wins": 30,
+            "loss": 15,
+            "Roster": {
+                "123": {
+                    "nbaComName":"Paolo Banchero",
+                    "nbaComHeadshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432573.png",
+                    "pos": "PF",
+                    "height":"6-10",
+                    "weight":"250",
+                    "bDay": "11/12/2002",
+                    "stats": {
+                        "pts":"23.1",
+                        "ast":"4.9",
+                        "reb":"7.2"
+                    }
+                },
+                "234": {
+                    "nbaComName":"Franz Wagner",
+                    "nbaComHeadshot":"https://cdn.nba.com/headshots/nba/latest/1040x760/1630532.png",
+                    "pos": "PF",
+                    "height":"6-10",
+                    "weight":"220",
+                    "bDay": "8/27/2001",
+                    "stats": {
+                        "pts":"20.9",
+                        "ast":"3.9",
+                        "reb":"5.8"
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -11,18 +11,22 @@ const options = (method, url, params, headers) => {
 };
   
 
-router.route('/get-players').post(async (req, res) => {
+router.route('/get-teams').post(async (req, res) => {
     try {
-        const team_id = req.body.team_id;
-
         const method = "GET"
-        const url = 'https://sportscore1.p.rapidapi.com/teams/18792/players';
-        const params = {page: '1', id: team_id}
+        const url = 'https://tank01-fantasy-stats.p.rapidapi.com/getNBATeams';
+        const params = {
+            schedules: 'true',
+            rosters: 'true',
+            topPerformers: 'true',
+            teamStats: 'true',
+            statsToGet: 'averages'
+        }
         const headers = {
             'X-RapidAPI-Key': process.env.API_KEY,
-            'X-RapidAPI-Host': process.env.SPORTS_API_HOST,
+            'X-RapidAPI-Host': process.env.TEAMS_API_HOST,
         }
-   
+
         await axios.request(options(method, url, params, headers))
         .then((response) => { res.json(response.data); });
     }

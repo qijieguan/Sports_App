@@ -1,0 +1,83 @@
+
+.home {
+    min-height: 150vh;
+    padding: 5vh 0;
+}
+
+.teams-container {
+    margin: 2.5vh auto 30vh auto;
+    grid-template-columns: 22% 22% 22% 22%;
+    column-gap: 3vw;
+    row-gap: 5vh;
+    width: 90%;
+}
+
+.get-data-button {
+    font-size: clamp(1.25rem, 2vw, 2rem);
+    text-transform: uppercase;
+    color: white;
+    background: brown;
+    border-radius: 0.6rem;
+    border: 0;
+    cursor: pointer;
+}
+.get-data-button:hover { opacity: 0.7; }
+
+.intro-section {
+    padding: 7.5vh 0;
+}
+
+.intro-wrapper {
+    margin-bottom: 40vh;
+    position: relative;
+}
+
+.intro-image {
+    margin: 0 auto;
+    height: 100vh;
+    width: 90%;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset -50px 0 50px black, inset 50px 0 50px black;
+}
+
+.intro-text { padding: 0 5vw; width: 75%; border-radius: 0.5rem; }
+.intro-text > h1 { font-size: clamp(2rem, 3vw, 3rem); }
+.intro-text > span { font-size: clamp(1rem, 1.25vw, 1.25rem); width: 75%; line-height: 1.5; }
+
+.intro-image.first {
+    background-image: url("https://digwallpapers.com/wallpapers/full/e/d/4/45685-3840x2160-nba-dunks-wallpaper-image-desktop-4k.jpg");
+}
+
+.intro-text.first {
+    padding: 5vh 1vw 10vh 3vw;
+    position: absolute;
+    inset: 0 2.5% auto auto;
+    width: max(30%, 20rem);
+    color: white;
+    background: rgba(32, 32, 32, 0.7);
+    transform: translateY(-10%);
+}
+
+.intro-text.second { 
+    position: absolute;
+    inset: 0  0 auto auto;
+    padding: 0 2vw 5vh 2vw;
+    width: 75%;
+    color: white; 
+    background: rgba(32, 32, 32, 0.9);
+    transform: translate3d(-2.5%, -15%, 0);
+}
+
+.intro-image.second {
+    background-image: url("https://api.thegameday.com/wp-content/uploads/2023/05/20230411_NBAPlayoffs_FINALS_Heat.png");
+}
+
+@media (max-width: 50rem) {
+    .teams-container { grid-template-columns: 40% 40%; }
+}
+
+@media (max-width: 25rem) {
+    .teams-container { grid-template-columns: 100%; margin: 2.5vh auto 10vh auto; row-gap: 2vh;}
+    .intro-wrapper { margin-bottom: 10vh; }
+}

@@ -1,0 +1,37 @@
+.footer {
+    justify-content: space-around;
+    padding: 0 2.5vw;
+    height: 25vh;
+    color: white;
+    background: rgb(10, 10, 10);
+}
+
+.main-logo {
+    height: 70%;
+    margin-right: 10%;
+}
+
+.api-citation { 
+    width: 25%;
+}
+
+.api-citation > h1 {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.api-citation > span {
+    width: 70%;
+}
+
+.contact {
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.contact > h1 {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
