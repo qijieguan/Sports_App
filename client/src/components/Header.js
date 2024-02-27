@@ -1,6 +1,6 @@
 import '../styles/header.css';
 
-import { createBrowserRouter, useLocation, useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { useEffect } from 'react'; 
 
 const Header = () => {

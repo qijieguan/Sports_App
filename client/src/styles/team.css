@@ -1,0 +1,47 @@
+.team {
+    grid-template-columns: 50% 15% 15% 15%;
+    justify-content: flex-start;
+    column-gap: 1vw;
+    height: 5vh;
+    color: white;
+    border-top: 1px solid rgb(29, 29, 29);
+}
+
+.team:hover { opacity: 0.4; }
+
+.team:hover .team-name { text-decoration: underline; }
+
+.team-logo-wrapper {
+    height: 100%;
+    column-gap: 2vw;
+}
+
+.team-logo{
+    height: 80%;
+    width: 2vw;
+    object-fit: contain;
+    border-radius: 3rem;
+}
+
+.team-name { font-weight: 500; }
+
+.team > span {
+    margin: auto 0;
+}
+
+@media (max-width: 50rem) {
+    .team-logo{
+        height: 80%;
+        width: 5vw;
+    }
+}
+
+@media (max-width: 25rem) {
+    .team-logo{
+        height: 80%;
+        width: 7.5vw;
+    }
+}
+
+
+

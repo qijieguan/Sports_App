@@ -1,4 +1,4 @@
-import '../styles/teams.css';
+import '../styles/team.css';
 
 import { Link } from 'react-router-dom'
 
@@ -11,19 +11,19 @@ const Team = ({team}) => {
     }, [team]);
     
     return (
-        <Link className='team flex'
+        <Link className='team grid'
             to={"/" + team.teamCity.replace(" ", "_") + "_" + team.teamName + "/Roster"} 
             state={{team: team, roster: Object.values(team.Roster)}}
         >
-            <div className='team-logo-wrapper'>
+            <div className='team-logo-wrapper flex'>
                 <img className="team-logo" src={team.nbaComLogo2 ? team.nbaComLogo2 : team.nbaComLogo1} alt=""/>
+                <div className="team-name">{team.teamCity + " " + team.teamName}</div>
             </div>
-            <div className='team-info flex'>
-                
-                    <div className="team-name">{team.teamCity + " " + team.teamName}</div>
-        
-                <div className='team-record'>({team.wins} - {team.loss})</div>
-            </div>  
+          
+            <span className='team-wins'>{team.wins}</span>
+            <span className='team-loss'>{team.loss}</span>
+            <span className='team-percentage'>{((team.wins) / ((Number(team.wins) + Number(team.loss)))).toFixed(2)}</span>
+           
         </Link>
     )
 }

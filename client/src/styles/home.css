@@ -2,34 +2,42 @@
 .home {
     min-height: 150vh;
     padding: 5vh 0;
-}
-
-.teams-container {
-    margin: 2.5vh auto 30vh auto;
-    grid-template-columns: 22% 22% 22% 22%;
-    column-gap: 3vw;
-    row-gap: 5vh;
-    width: 90%;
+    flex-direction: column;
 }
 
 .get-data-button {
+    padding: 2vh 2vw;
     font-size: clamp(1.25rem, 2vw, 2rem);
-    text-transform: uppercase;
-    color: white;
-    background: brown;
-    border-radius: 0.6rem;
-    border: 0;
+    color: orange;
+    background: transparent;
+    border-radius: 0.5rem;
+    border: 2px solid;
     cursor: pointer;
 }
-.get-data-button:hover { opacity: 0.7; }
+.get-data-button:hover { 
+    font-weight: 500; 
+    color: black; 
+    background: orange; 
+    border: 2px solid darkorange;
+    box-shadow: 0 0 10px darkorange; 
+}
 
 .intro-section {
     padding: 7.5vh 0;
+    width: 100%;
 }
 
 .intro-wrapper {
     margin-bottom: 40vh;
     position: relative;
+}
+
+.intro-wrapper.first {
+    margin-top: 15vh;
+}
+
+.intro-wrapper.second {
+    margin-bottom: 20vh;
 }
 
 .intro-image {
@@ -42,7 +50,7 @@
 }
 
 .intro-text { padding: 0 5vw; width: 75%; border-radius: 0.5rem; }
-.intro-text > h1 { font-size: clamp(2rem, 3vw, 3rem); }
+.intro-text > h1 { font-size: clamp(2rem, 3vw, 3rem); color: orange; }
 .intro-text > span { font-size: clamp(1rem, 1.25vw, 1.25rem); width: 75%; line-height: 1.5; }
 
 .intro-image.first {
@@ -78,6 +86,8 @@
 }
 
 @media (max-width: 25rem) {
-    .teams-container { grid-template-columns: 100%; margin: 2.5vh auto 10vh auto; row-gap: 2vh;}
     .intro-wrapper { margin-bottom: 10vh; }
+    .intro-wrapper.first { margin-top: 0; }
+    .intro-wrapper.second { margin-bottom: 0; }
+    .intro-text.first, .intro-text.second { width: 90%; }
 }

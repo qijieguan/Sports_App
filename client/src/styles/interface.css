@@ -1,0 +1,95 @@
+.interface {
+    margin: 1vh auto 5vh auto;
+    flex-direction: column;
+    width: max(70%, 35rem);
+    color: white;
+    background: rgb(15, 15, 15);
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 10px black;
+    overflow: hidden;
+}
+
+.interface-header {
+    align-self: flex-start;
+    color: black;
+    background: orange;
+    width: 100%;
+}
+
+.interface-header > h1 {
+    margin: 0;
+    padding: 2vh 2vw 1vh 2vw;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+.interface-li.active {
+    padding: 1vh 2vw;
+    font-weight: 500;
+    color: brown;
+    width: fit-content;
+    border-bottom: 3px solid;
+}
+
+.interface-detail {
+    padding: 2.5vh 0;
+    justify-content: space-around;
+    width: 100%;
+    background: rgb(25, 25, 25);
+}
+
+.interface-detail > div {
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.interface-detail span:nth-child(1) {
+    color: gray;
+}
+
+.interface-detail span:nth-child(2) {
+    font-size: clamp(0.875rem, 1.125vw, 1.125rem);
+    font-weight: 500;
+    color: rgb(182, 182, 182);
+}
+
+.interface-filters {
+    width: 100%;
+    background: rgb(35, 35, 35);
+}
+
+.conference {
+    padding: 2.5vh 0;
+    text-align: center;
+    color: white;
+    width: 50%;
+}
+
+.conference.active {
+    border-bottom: 2px solid;
+}
+
+.interface-table {
+    grid-template-columns: 50% auto auto auto;
+    padding: 2vh 2vw;
+    min-height: 50vh;
+    width: 100%;
+}
+
+.table-labels {
+    padding-bottom: 2vh;
+    grid-template-columns: 50% 15% 15% 15%;
+    justify-content: flex-start;
+    column-gap: 1vw;
+    text-align: left;
+    color: gray;
+}
+
+.table-empty {
+    margin: 10vh 0;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    width: 100%;
+}
+
+@media (max-width: 25rem) {
+    .interface { margin: 0 auto 3vh auto; width: 95%; }
+}

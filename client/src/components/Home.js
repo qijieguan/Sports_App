@@ -5,7 +5,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import uuid from 'react-uuid';
 
-import Team from './Team.js';
+import Interface from './Interface.js';
 
 const baseURL = window.location.href.includes('localhost:3000') ? 'http://localhost:3001' : '';
 
@@ -25,19 +25,19 @@ const Home = () => {
             console.log(response.data);
             setTeams(response.data.body);
             sessionStorage.setItem('teams', JSON.stringify(response.data.body));
+            window.scrollTo({top: 0});
         });
         
     }
 
     return (
-        <div className='home'>
-            <div className='teams-container grid'>
-                {teams.map(team => <Team key={uuid()} team={team}/>)}
+        <div className='home flex'>
 
-                {!sessionStorage.getItem('teams') &&
-                    <button className='get-data-button' onClick={() => {httpRequest()}}>Get All Data</button>
-                }
-            </div>
+            <Interface teams={teams}/>
+            
+            {!sessionStorage.getItem('teams') &&
+                <button className='get-data-button' onClick={() => {httpRequest()}}>Click to Get All Teams</button>
+            }
 
             <div className='intro-section'>
                 <div className='intro-wrapper first'>   
