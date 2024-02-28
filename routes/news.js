@@ -10,17 +10,13 @@ const options = (method, url, params, headers) => {
     }
 };
   
-
-router.route('/get-teams').post(async (req, res) => {
+router.route('/get-news').post(async (req, res) => {
     try {
-        const method = "GET"
-        const url = 'https://tank01-fantasy-stats.p.rapidapi.com/getNBATeams';
+        const method = 'GET';
+        const url = 'https://tank01-fantasy-stats.p.rapidapi.com/getNBANews';
         const params = {
-            schedules: 'true',
-            rosters: 'true',
-            topPerformers: 'true',
-            teamStats: 'true',
-            statsToGet: 'averages'
+          recentNews: 'true',
+          maxItems: '10'
         }
         const headers = {
             'X-RapidAPI-Key': process.env.API_KEY,
@@ -36,4 +32,3 @@ router.route('/get-teams').post(async (req, res) => {
 });
 
 module.exports = router;
-  

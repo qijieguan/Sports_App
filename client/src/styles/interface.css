@@ -22,72 +22,22 @@
     font-size: clamp(1.5rem, 2vw, 2rem);
 }
 
-.interface-li.active {
-    padding: 1vh 2vw;
+.interface-ul {
+    width: fit-content;
+}
+
+.interface-li {
+    margin-top: auto;
+    padding: 2vh 2vw;
+    font-size: clamp(1rem, 1.25vw, 1.25rem);
     font-weight: 500;
     color: brown;
-    width: fit-content;
+}
+
+.interface-li:not(.active):hover { cursor: pointer; opacity: 0.4; }
+
+.interface-li.active {
     border-bottom: 3px solid;
-}
-
-.interface-detail {
-    padding: 2.5vh 0;
-    justify-content: space-around;
-    width: 100%;
-    background: rgb(25, 25, 25);
-}
-
-.interface-detail > div {
-    align-items: flex-start;
-    flex-direction: column;
-}
-
-.interface-detail span:nth-child(1) {
-    color: gray;
-}
-
-.interface-detail span:nth-child(2) {
-    font-size: clamp(0.875rem, 1.125vw, 1.125rem);
-    font-weight: 500;
-    color: rgb(182, 182, 182);
-}
-
-.interface-filters {
-    width: 100%;
-    background: rgb(35, 35, 35);
-}
-
-.conference {
-    padding: 2.5vh 0;
-    text-align: center;
-    color: white;
-    width: 50%;
-}
-
-.conference.active {
-    border-bottom: 2px solid;
-}
-
-.interface-table {
-    grid-template-columns: 50% auto auto auto;
-    padding: 2vh 2vw;
-    min-height: 50vh;
-    width: 100%;
-}
-
-.table-labels {
-    padding-bottom: 2vh;
-    grid-template-columns: 50% 15% 15% 15%;
-    justify-content: flex-start;
-    column-gap: 1vw;
-    text-align: left;
-    color: gray;
-}
-
-.table-empty {
-    margin: 10vh 0;
-    font-size: clamp(1rem, 1.5vw, 1.5rem);
-    width: 100%;
 }
 
 @media (max-width: 25rem) {

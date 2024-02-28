@@ -1,44 +1,13 @@
 import '../styles/home.css';
-import data from '../JSON/teams.json';
-
-import axios from 'axios';
-import { useEffect, useState } from 'react';
-import uuid from 'react-uuid';
 
 import Interface from './Interface.js';
 
-const baseURL = window.location.href.includes('localhost:3000') ? 'http://localhost:3001' : '';
-
 const Home = () => {
-
-    const [teams, setTeams] = useState([]);
-
-    useEffect(() => {
-        if (!teams.length && !sessionStorage.getItem('teams')) { setTeams(data.Teams); }
-        if (sessionStorage.getItem('teams')) { setTeams(JSON.parse(sessionStorage.getItem('teams'))); }
-    }, [teams.length]);
-
-    const httpRequest = async() => {
-        
-        await axios.post(baseURL + '/teams/get-teams/')
-        .then(response => {
-            console.log(response.data);
-            setTeams(response.data.body);
-            sessionStorage.setItem('teams', JSON.stringify(response.data.body));
-            window.scrollTo({top: 0});
-        });
-        
-    }
-
     return (
         <div className='home flex'>
 
-            <Interface teams={teams}/>
+            <Interface/>
             
-            {!sessionStorage.getItem('teams') &&
-                <button className='get-data-button' onClick={() => {httpRequest()}}>Click to Get All Teams</button>
-            }
-
             <div className='intro-section'>
                 <div className='intro-wrapper first'>   
                     <div className='intro-image first'/>

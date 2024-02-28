@@ -18,8 +18,10 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 
 
 const teamsRouter = require('./routes/teams');
+const newsRouter = require('./routes/news');
 
 app.use('/teams', teamsRouter);
+app.use('/news', newsRouter);
 
 app.get('*', (req, res) => {res.sendFile(path.join(__dirname+'/client/build/index.html'));});
 

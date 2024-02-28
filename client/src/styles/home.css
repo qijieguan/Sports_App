@@ -5,23 +5,6 @@
     flex-direction: column;
 }
 
-.get-data-button {
-    padding: 2vh 2vw;
-    font-size: clamp(1.25rem, 2vw, 2rem);
-    color: orange;
-    background: transparent;
-    border-radius: 0.5rem;
-    border: 2px solid;
-    cursor: pointer;
-}
-.get-data-button:hover { 
-    font-weight: 500; 
-    color: black; 
-    background: orange; 
-    border: 2px solid darkorange;
-    box-shadow: 0 0 10px darkorange; 
-}
-
 .intro-section {
     padding: 7.5vh 0;
     width: 100%;
