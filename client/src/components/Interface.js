@@ -3,6 +3,7 @@ import '../styles/interface.css';
 import { useState, useEffect } from 'react'; 
 
 import Standings from './Standings.js';
+import Scores from './Scores.js';
 import News from './News.js';
 
 const Interface = () => {
@@ -33,6 +34,9 @@ const Interface = () => {
                     <div className={'interface-li standings ' + toggleInterface('standings')} 
                         onClick={() => {changeInterface('standings')}}
                     >STANDINGS</div>
+                    <div className={'interface-li scores ' + toggleInterface('scores')} 
+                        onClick={() => {changeInterface('scores')}}
+                    >SCORES</div>
                     <div className={'interface-li news ' + toggleInterface('news')} 
                         onClick={() => {changeInterface('news')}}
                     >NEWS</div>
@@ -44,6 +48,9 @@ const Interface = () => {
             }
             {browse === 'news' &&
                 <News/>
+            }
+            {browse === 'scores' &&
+                <Scores/>
             }
         </div>
     );

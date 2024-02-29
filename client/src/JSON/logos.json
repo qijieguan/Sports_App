@@ -1,0 +1,154 @@
+{
+    "logos": [
+        {
+            "teamAbv": "ORL",
+            "teamName": "Magic",
+            "logo": "https://cdn.nba.com/logos/nba/1610612753/primary/L/logo.svg"
+        },
+        {
+            "teamAbv": "MIN",
+            "teamName": "Timberwolves",
+            "logo": "https://cdn.nba.com/logos/nba/1610612750/primary/L/logo.svg"
+        },
+        {
+            "teamAbv": "MIA",
+            "teamName": "Heat",
+            "logo": "https://cdn.nba.com/logos/nba/1610612748/primary/L/logo.svg"
+        },
+        {
+            "teamAbv": "BOS",
+            "teamName": "Celtics",
+            "logo": "https://cdn.nba.com/logos/nba/1610612738/primary/L/logo.svg"
+        },
+        {
+            "teamAbv": "LAC",
+            "teamName": "Clippers",
+            "logo": "https://cdn.nba.com/logos/nba/1610612746/primary/L/logo.svg"
+        },
+        {
+            "teamAbv": "DEN",
+            "teamName": "Nuggets",
+            "logo": "https://cdn.nba.com/logos/nba/1610612743/primary/L/logo.svg"
+        },
+        {
+            "teamAbv": "DET",
+            "teamName": "Pistons",
+            "logo": "https://cdn.nba.com/logos/nba/1610612765/primary/L/logo.svg"
+        },
+        {
+            "teamAbv": "ATL",
+            "teamName": "Hawks",
+            "logo": "https://cdn.nba.com/teams/uploads/sites/1610612737/2023/01/atl_hawks_primary_icon.svg"
+        },
+        {
+            "teamAbv": "CLE",
+            "teamName": "Cavaliers",
+            "logo": "https://cdn.nba.com/logos/nba/1610612739/primary/L/logo.svg"
+        },
+        {
+            "teamAbv": "TOR",
+            "teamName": "Raptors",
+            "logo": "https://cdn.nba.com/logos/nba/1610612761/primary/L/logo.svg"
+        },
+        {
+            "teamAbv": "WAS",
+            "teamName": "Wizards",
+            "logo": "https://cdn.nba.com/teams/uploads/sites/1610612764/2022/06/wiz-primary.svg"
+        },
+        {
+            "teamAbv": "PHO",
+            "teamName": "Suns",
+            "logo": "https://cdn.nba.com/teams/uploads/sites/1610612756/2022/08/suns-logo.svg"
+        },
+        {
+            "teamAbv": "SA",
+            "teamName": "Spurs",
+            "logo": "https://cdn.nba.com/logos/nba/1610612759/primary/L/logo.svg"
+        },
+        {
+            "teamAbv": "CHI",
+            "teamName": "Bulls",
+            "logo": "https://cdn.nba.com/logos/nba/1610612741/primary/L/logo.svg"
+        },
+        {
+            "teamAbv": "CHA",
+            "teamName": "Hornets",
+            "logo": "https://cdn.nba.com/logos/nba/1610612766/primary/L/logo.svg"
+        },
+        {
+            "teamAbv": "PHI",
+            "teamName": "76ers",
+            "logo": "https://cdn.nba.com/logos/nba/1610612755/primary/L/logo.svg"
+        },
+        {
+            "teamAbv": "NO",
+            "teamName": "Pelicans",
+            "logo": "https://cdn.nba.com/logos/nba/1610612740/primary/L/logo.svg"
+        },
+        {
+            "teamAbv": "SAC",
+            "teamName": "Kings",
+            "logo": "https://cdn.nba.com/logos/nba/1610612758/primary/L/logo.svg"
+        },
+        {
+            "teamAbv": "DAL",
+            "teamName": "Mavericks",
+            "logo": "https://cdn.nba.com/logos/nba/1610612742/primary/L/logo.svg"
+        },
+        {
+            "teamAbv": "HOU",
+            "teamName": "Rockets",
+            "logo": "https://cdn.nba.com/logos/nba/1610612745/primary/L/logo.svg"
+        },
+        {
+            "teamAbv": "BKN",
+            "teamName": "Nets",
+            "logo": "https://cdn.nba.com/logos/nba/1610612751/primary/L/logo.svg"
+        },
+        {
+            "teamAbv": "NY",
+            "teamName": "Knicks",
+            "logo": "https://cdn.nba.com/logos/nba/1610612752/primary/L/logo.svg"
+        },
+        {
+            "teamAbv": "UTA",
+            "teamName": "Jazz",
+            "logo": "https://cdn.nba.com/logos/nba/1610612762/primary/L/logo.svg"
+        },
+        {
+            "teamAbv": "OKC",
+            "teamName": "Thunder",
+            "logo": "https://cdn.nba.com/teams/uploads/sites/1610612760/2021/12/logo.svg"
+        },
+        {
+            "teamAbv": "POR",
+            "teamName": "Blazers",
+            "logo": "https://cdn.nba.com/teams/uploads/sites/1610612757/2022/03/tb_primary_rgb.svg"
+        },
+        {
+            "teamAbv": "IND",
+            "teamName": "Pacers",
+            "logo": "https://cdn.nba.com/logos/nba/1610612754/primary/L/logo.svg"
+        },
+        {
+            "teamAbv": "MIL",
+            "teamName": "Bucks",
+            "logo": "https://cdn.nba.com/logos/nba/1610612749/primary/L/logo.svg"
+        },
+        {
+            "teamAbv": "GS",
+            "teamName": "Warriors",
+            "logo": "https://cdn.nba.com/logos/nba/1610612744/primary/L/logo.svg"
+        },
+        {
+            "teamAbv": "MEM",
+            "teamName": "Grizzlies",
+            "logo": "https://cdn.nba.com/logos/nba/1610612763/primary/L/logo.svg"
+        },
+        {
+            "teamAbv": "LAL",
+            "teamName": "Lakers",
+            "logo": "https://cdn.nba.com/logos/nba/1610612747/primary/L/logo.svg"
+        }
+    ]
+}
