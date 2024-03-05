@@ -21,6 +21,8 @@ const Interface = () => {
     const changeInterface = (param) => {
         sessionStorage.setItem('browse', JSON.stringify(param));
         setBrowse(param);
+
+        document.querySelector("." + param + "-section")?.scrollTo(0, 0);
     }    
 
     const toggleInterface = (param) => {

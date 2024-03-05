@@ -1,7 +1,6 @@
 
 .home {
     height: 100vh;
-    padding: 5vh 0;
     width: 100%;
     flex-direction: column;
     overflow-y: auto;
@@ -13,14 +12,6 @@
     height: 100vh;
     width: 100%;
     scroll-snap-align: start;
-}
-
-.intro-wrapper.first {
-    margin-top: 15vh;
-}
-
-.intro-wrapper.second {
-    margin-bottom: 20vh;
 }
 
 .intro-image {
@@ -47,7 +38,6 @@
     width: max(30%, 20rem);
     color: white;
     background: rgba(32, 32, 32, 0.7);
-    transform: translateY(-10%);
 }
 
 .intro-text.second { 
@@ -57,7 +47,7 @@
     width: 75%;
     color: white; 
     background: rgba(32, 32, 32, 0.9);
-    transform: translate3d(-2.5%, -10%, 0);
+    transform: translate3d(-2.5%, 0, 0);
 }
 
 .intro-image.second {

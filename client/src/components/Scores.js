@@ -20,8 +20,7 @@ const Scores = () => {
         else {
             getScoresRequest();
         }
-        
-    }, [scores]);
+    }, []);
 
     const getScoresRequest = async () => {
         let date = (new Date()).toLocaleDateString("en-CA", {year:"numeric", month: "2-digit", day:"2-digit"}).replaceAll('-', '');

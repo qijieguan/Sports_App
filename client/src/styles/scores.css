@@ -2,7 +2,6 @@
     padding: 2vh 0;
     grid-template-columns: 45% 45%;
     column-gap: 2vw;
-    row-gap: 2vh;
     height: 100vh;
     width: 100%;
     background: rgb(25, 25, 25);
@@ -11,7 +10,6 @@
 
 .game {
     justify-content: space-between;
-    height: 20vh;
     background: rgb(35, 35, 35);
     border-radius: 0.5rem;
     overflow: hidden;
@@ -22,14 +20,14 @@
     justify-content: center;
     row-gap: 1.5vh;
     height: 100%;
-    width: 25%;
+    width: 33%;
     border-radius: 0.5rem;
     background: rgb(30, 30, 30);
 }
 
 .team-away > img, .team-home > img {
-    height: 25%;
-    width: 25%;
+    height: 33%;
+    width: fit-content
 }
 
 .team-away > span, .team-home > span {

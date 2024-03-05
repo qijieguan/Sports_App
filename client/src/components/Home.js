@@ -5,20 +5,23 @@ import Footer from './Footer.js';
 import LoadScreen from './LoadScreen.js';
 
 import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const Home = () => {
 
+    const location = useLocation();
+
     useEffect(() => {
         callObserver();
-    }, []);
+    }, [location]);
 
     const callObserver = () => {
         let targets = document.querySelectorAll('.animate');
 
         let options = {
             root: null,
-            rootMargin: '0px',
-            threshold: 0
+            rootMargin: '-200px 0px -200px 0px',
+            threshold: 0.1
         }
 
         const observer = new IntersectionObserver(function(entries, observer){

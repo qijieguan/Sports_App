@@ -15,11 +15,13 @@ const Standings = () => {
     const baseURL = window.location.href.includes('localhost:3000') ? 'http://localhost:3001' : '';
 
     useEffect(() => {
-        if (!sessionStorage.getItem('teams')) { 
+        if (sessionStorage.getItem('teams')) { 
+            sortTeams(JSON.parse(sessionStorage.getItem('teams'))); 
+        }
+        else { 
             getTeamsRequest();
             //sortTeams(data.Teams); 
         }
-        else { sortTeams(JSON.parse(sessionStorage.getItem('teams'))); }
       
     }, [conference]);
 
