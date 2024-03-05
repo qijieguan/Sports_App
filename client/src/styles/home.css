@@ -1,18 +1,18 @@
 
 .home {
-    min-height: 150vh;
+    height: 100vh;
     padding: 5vh 0;
-    flex-direction: column;
-}
-
-.intro-section {
-    padding: 7.5vh 0;
     width: 100%;
+    flex-direction: column;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
 }
 
 .intro-wrapper {
-    margin-bottom: 40vh;
     position: relative;
+    height: 100vh;
+    width: 100%;
+    scroll-snap-align: start;
 }
 
 .intro-wrapper.first {
@@ -57,7 +57,7 @@
     width: 75%;
     color: white; 
     background: rgba(32, 32, 32, 0.9);
-    transform: translate3d(-2.5%, -15%, 0);
+    transform: translate3d(-2.5%, -10%, 0);
 }
 
 .intro-image.second {
@@ -69,6 +69,7 @@
 }
 
 @media (max-width: 25rem) {
+    .home { margin-left: auto; width: 90%; }
     .intro-wrapper { margin-bottom: 10vh; }
     .intro-wrapper.first { margin-top: 0; }
     .intro-wrapper.second { margin-bottom: 0; }

@@ -41,7 +41,7 @@ const Roster = () => {
                     <img src={team.nbaComLogo2 ? team.nbaComLogo2 : team.nbaComLogo1} alt=""></img>
                     <div className='team-banner-info flex'>
                         <span>{location.pathname.split('/')[1].replace(/_/g, ' ')}</span>
-                        <span>(W {team.wins} - L {team.loss})</span>
+                        <span>{team.wins} - {team.loss}</span>
                     </div>
                 </div>
             }

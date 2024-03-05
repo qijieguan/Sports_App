@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 import Standings from './Standings.js';
 import Scores from './Scores.js';
 import News from './News.js';
+import LoadScreen from './LoadScreen.js';
 
 const Interface = () => {
 
@@ -27,7 +28,8 @@ const Interface = () => {
     }
 
     return (
-        <div className="interface flex">
+        <div className="interface flex animate">
+            <LoadScreen type={'section'}/>
             <div className='interface-header'>
                 <h1>NBA {JSON.parse(sessionStorage.getItem('browse'))}</h1>
                 <div className='interface-ul flex'>

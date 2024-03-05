@@ -1,7 +1,7 @@
 .news-section {
-    min-height: 40vh;
+    height: 100%;
     width: 100%;
-    background: rgb(25, 25, 25);
+    overflow-y: auto;
 }
 
 .news-li {
@@ -10,6 +10,7 @@
     min-height: 20vh;
     width: 97.5%;
     background: rgb(35, 35, 35);
+    border-radius: 0.5rem;
 }
 
 .news-li-title {

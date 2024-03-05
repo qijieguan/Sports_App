@@ -1,6 +1,8 @@
 .standings-section {
+    height: 100%;
+    overflow-y: auto;
     width: 100%;
-}
+}   
 
 .interface-detail {
     padding: 2.5vh 0;
@@ -32,9 +34,11 @@
     text-align: center;
     color: white;
     width: 50%;
+    cursor: pointer;
 }
 
 .conference.active {
+    color: orange;
     border-bottom: 2px solid;
 }
 

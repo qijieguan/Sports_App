@@ -11,9 +11,15 @@
 }
 
 .App {
+  flex-direction: column;
   background: black;
   min-height: 100vh;
 }
+
+*::-webkit-scrollbar{
+  background-color: rgb(25, 25, 25);
+}
+::-webkit-scrollbar-thumb { background-color: rgb(75, 75, 75) ; border-radius: 2rem; }
 
 .flex {
   display: flex;

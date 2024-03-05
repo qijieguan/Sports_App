@@ -3,15 +3,33 @@
     grid-template-columns: 45% 45%;
     column-gap: 2vw;
     row-gap: 2vh;
-    min-height: 40vh;
+    height: 100vh;
     width: 100%;
     background: rgb(25, 25, 25);
+    overflow-y: auto;
 }
 
 .game {
-    padding: 0 5vw;
     justify-content: space-between;
+    height: 20vh;
     background: rgb(35, 35, 35);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.team-away, .team-home {
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1.5vh;
+    height: 100%;
+    width: 25%;
+    border-radius: 0.5rem;
+    background: rgb(30, 30, 30);
+}
+
+.team-away > img, .team-home > img {
+    height: 25%;
+    width: 25%;
 }
 
 .team-away > span, .team-home > span {
@@ -21,20 +39,20 @@
 .game-score {
     flex-direction: column;
     row-gap: 1vh;
-
 }
 
 .game-points > span {
-    font-size: clamp(1rem, 1.25vw, 1.25rem);
+    font-size: clamp(1rem, 1.375vw, 1.375rem);
 }
 
 .game-time > span {
-    font-size: clamp(0.875rem, 1vw, 1rem);
+    font-size: clamp(0.875rem, 1.25vw, 1.25rem);
     color: orange;
 }
 
 .game-start-time {
     font-size: clamp(1rem, 1.25vw, 1.25rem);
+    font-weight: 500;
 }
 
 @media (max-width: 35rem) {

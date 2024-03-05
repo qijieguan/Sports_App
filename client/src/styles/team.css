@@ -2,12 +2,12 @@
     grid-template-columns: 50% 15% 15% 15%;
     justify-content: flex-start;
     column-gap: 1vw;
-    height: 5vh;
+    min-height: 5vh;
     color: white;
     border-top: 1px solid rgb(29, 29, 29);
 }
 
-.team:hover { opacity: 0.4; }
+.team:hover { color: orange; }
 
 .team:hover .team-name { text-decoration: underline; }
 

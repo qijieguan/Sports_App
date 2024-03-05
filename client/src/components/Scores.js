@@ -40,7 +40,7 @@ const Scores = () => {
             {scores.length &&
                 scores.map(score => 
                     <div className='game flex' key={uuid()}>
-                        <div className='team-away'>
+                        <div className='team-away flex'>
                             <img src={Data.logos.filter(logo => logo.teamAbv === score.away)[0].logo} alt=""/>
                             <span>{score.away}</span>
                         </div>
@@ -61,7 +61,7 @@ const Scores = () => {
                             <span className='game-start-time'>{score.gameTime}m</span>
                         }
 
-                        <div className='team-home'>
+                        <div className='team-home flex'>
                             <img src={Data.logos.filter(logo => logo.teamAbv === score.home)[0].logo} alt=""/>
                             <span>{score.home}</span>
                         </div>
