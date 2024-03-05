@@ -18,7 +18,7 @@ const News = () => {
         else {
             getNewsRequest();
         }
-    }, []);
+    }, [news]);
 
     const getNewsRequest = async () => {
         await axios.post(baseURL + '/news/get-news/')
