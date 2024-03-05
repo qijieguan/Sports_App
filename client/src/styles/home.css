@@ -9,6 +9,7 @@
 
 .intro-wrapper {
     position: relative;
+    color: white;
     height: 100vh;
     width: 100%;
     scroll-snap-align: start;
@@ -36,7 +37,6 @@
     position: absolute;
     inset: 0 2.5% auto auto;
     width: max(30%, 20rem);
-    color: white;
     background: rgba(32, 32, 32, 0.7);
 }
 
@@ -54,6 +54,70 @@
     background-image: url("https://api.thegameday.com/wp-content/uploads/2023/05/20230411_NBAPlayoffs_FINALS_Heat.png");
 }
 
+.intro-wrapper.third .card-title > span, .intro-wrapper.third .card > p {
+    opacity: 0;
+}
+
+.intro-wrapper.third.intersected .card-title > span {
+    animation: fadeSlideUp 1s 3s forwards;
+}
+
+.intro-wrapper.third.intersected .card > p {
+    animation: fadeSlideUp 1s 3.5s forwards;
+}
+
+@keyframes fadeSlideUp {
+    0% { opacity: 0; transform: translateY(100%); }
+    25% { opacity: 0.3; }
+    100% { opacity: 1; transform: translate(0); }
+}
+
+.intro-awards {
+    margin-left: auto;
+    padding: 2vh 2vw;
+    column-gap: 2vw;
+    height: 100vh;
+    width: 90%;
+}
+
+.intro-awards > h1 {
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    width: 30%;
+}
+
+.cards {
+    flex-direction: column;
+    width: 70%;
+}
+
+.card {
+    flex-direction: column;
+    align-items: flex-start;
+    column-gap: 2vw;
+    row-gap: 0;
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+
+.card-title { margin-top: 2vh; justify-content: center; column-gap: 2vw; }
+
+.card-title > h1 {
+    margin: 0;
+    font-size: clamp(1.25rem, 2vw, 2rem);
+    color: orange;
+}
+
+.card-title > span {
+    font-weight: 500;
+    font-size: clamp(1rem, 1.25vw, 1.25rem);
+    color: rgb(200, 200, 200);
+}
+
+.card >  p {
+    font-size: clamp(0.875rem, 1.125vw, 1.125rem);
+    color: rgb(200, 200, 200);
+}
+
 @media (max-width: 50rem) {
     .teams-container { grid-template-columns: 40% 40%; }
 }
@@ -64,4 +128,6 @@
     .intro-wrapper.first { margin-top: 0; }
     .intro-wrapper.second { margin-bottom: 0; }
     .intro-text.first, .intro-text.second { width: 90%; }
+    .intro-awards { flex-direction: column; justify-content: center; width: 95%; }
+    .intro-awards > h1, .cards { width: 90%; }
 }

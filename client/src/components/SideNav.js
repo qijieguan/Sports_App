@@ -1,7 +1,10 @@
 import '../styles/side-nav.css';
+import { GrTrophy } from "react-icons/gr";
+import { FaBasketball, FaRankingStar, FaHeart } from "react-icons/fa6";
+import { PiConfettiBold } from "react-icons/pi";
 
 import { useLocation, useNavigate } from 'react-router-dom'
-import { useEffect, useState } from 'react'; 
+import { useEffect } from 'react'; 
 
 import LoadScreen from './LoadScreen.js';
 
@@ -28,8 +31,8 @@ const SideNav = () => {
             if (s === 'home') {
                 document.querySelector('.interface')?.scrollIntoView({block: 'start'})   
             }
-            if (s === 'first' || s === 'second') {
-                document.querySelector('.intro-text' + "." + s)?.scrollIntoView({block: 'start'}); 
+            if (s === 'first' || s === 'second' || s === 'third') {
+                document.querySelector('.intro-wrapper' + "." + s)?.scrollIntoView({block: 'start'}); 
             }
             if (s === 'footer') {
                 document.querySelector('.footer')?.scrollIntoView({block: 'start'});
@@ -71,10 +74,26 @@ const SideNav = () => {
                 <div/>
             </div>
             <div className='nav-links flex'>
-                <div onClick={() => {handleScrollSection('home')}}>NBA Standings</div>
-                <div onClick={() => {handleScrollSection('first')}}>What is NBA</div>
-                <div onClick={() => {handleScrollSection('second')}}>NBA Playoffs</div>
-                <div onClick={() => {handleScrollSection('footer')}}>About</div>
+                <div className='nav-link flex' onClick={() => {handleScrollSection('home')}}>
+                    <FaRankingStar className='icon'/>
+                    <h1>NBA Standings</h1>
+                </div>
+                <div className='nav-link flex' onClick={() => {handleScrollSection('first')}}>
+                    <FaBasketball className='icon'/>
+                    <h1>What is NBA</h1>
+                </div>
+                <div className='nav-link flex' onClick={() => {handleScrollSection('second')}}>
+                    <PiConfettiBold className='icon'/>
+                    <h1>NBA Playoffs</h1>
+                </div>
+                <div className='nav-link flex' onClick={() => {handleScrollSection('third')}}>
+                    <GrTrophy className='icon'/>
+                    <h1>NBA Awards</h1>
+                </div>
+                <div className="nav-link flex" onClick={() => {handleScrollSection('footer')}}>
+                    <FaHeart className='icon'/>
+                    <h1>About</h1>
+                </div>
             </div>
         </nav>
     )
