@@ -52,14 +52,14 @@ const SideNav = () => {
 
     const collapseNav = () => {
         document.querySelector('.side-nav')?.classList.remove('expand');
-        document.querySelector('.load-screen')?.classList.remove('appear');
-        document.querySelector('.load-screen')?.classList.add('shrink');
+        document.querySelector('.load-screen.main')?.classList.remove('appear');
+        document.querySelector('.load-screen.main')?.classList.add('shrink');
     }
 
     const expandNav = () => {
         document.querySelector('.side-nav')?.classList.add('expand');
-        document.querySelector('.load-screen')?.classList.add('appear');
-        document.querySelector('.load-screen')?.classList.remove('shrink');
+        document.querySelector('.load-screen.main')?.classList.add('appear');
+        document.querySelector('.load-screen.main')?.classList.remove('shrink');
     }
 
     return (
@@ -73,26 +73,28 @@ const SideNav = () => {
                 </div>
                 <div/>
             </div>
-            <div className='nav-links flex'>
-                <div className='nav-link flex' onClick={() => {handleScrollSection('home')}}>
-                    <FaRankingStar className='icon'/>
-                    <h1>NBA Standings</h1>
-                </div>
-                <div className='nav-link flex' onClick={() => {handleScrollSection('first')}}>
-                    <FaBasketball className='icon'/>
-                    <h1>What is NBA</h1>
-                </div>
-                <div className='nav-link flex' onClick={() => {handleScrollSection('second')}}>
-                    <PiConfettiBold className='icon'/>
-                    <h1>NBA Playoffs</h1>
-                </div>
-                <div className='nav-link flex' onClick={() => {handleScrollSection('third')}}>
-                    <GrTrophy className='icon'/>
-                    <h1>NBA Awards</h1>
-                </div>
-                <div className="nav-link flex" onClick={() => {handleScrollSection('footer')}}>
-                    <FaHeart className='icon'/>
-                    <h1>About</h1>
+            <div className='nav-links-wrapper'>
+                <div className='nav-links flex'>
+                    <div className='nav-link flex' onClick={() => {handleScrollSection('home')}}>
+                        <FaRankingStar className='icon'/>
+                        <h1>NBA Standings</h1>
+                    </div>
+                    <div className='nav-link flex' onClick={() => {handleScrollSection('first')}}>
+                        <FaBasketball className='icon'/>
+                        <h1>What is NBA</h1>
+                    </div>
+                    <div className='nav-link flex' onClick={() => {handleScrollSection('second')}}>
+                        <PiConfettiBold className='icon'/>
+                        <h1>NBA Playoffs</h1>
+                    </div>
+                    <div className='nav-link flex' onClick={() => {handleScrollSection('third')}}>
+                        <GrTrophy className='icon'/>
+                        <h1>NBA Awards</h1>
+                    </div>
+                    <div className="nav-link flex" onClick={() => {handleScrollSection('footer')}}>
+                        <FaHeart className='icon'/>
+                        <h1>About</h1>
+                    </div>
                 </div>
             </div>
         </nav>

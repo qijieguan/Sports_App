@@ -15,7 +15,7 @@ const Scores = () => {
     useEffect(() => {
         if (sessionStorage.getItem('scores')) {
             setScores(Object.values(JSON.parse(sessionStorage.getItem('scores'))));
-            console.log(Object.values(JSON.parse(sessionStorage.getItem('scores'))));
+            //console.log(Object.values(JSON.parse(sessionStorage.getItem('scores'))));
         }
         else {
             getScoresRequest();

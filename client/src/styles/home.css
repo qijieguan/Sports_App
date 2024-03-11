@@ -4,6 +4,7 @@
     width: 100%;
     flex-direction: column;
     overflow-y: auto;
+    overflow-x: hidden;
     scroll-snap-type: y mandatory;
 }
 
@@ -29,7 +30,7 @@
 .intro-text > span { font-size: clamp(1rem, 1.25vw, 1.25rem); width: 75%; line-height: 1.5; }
 
 .intro-image.first {
-    background-image: url("https://digwallpapers.com/wallpapers/full/e/d/4/45685-3840x2160-nba-dunks-wallpaper-image-desktop-4k.jpg");
+    background-image: url("https://www.sportscasting.com/wp-content/uploads/2022/03/Wilt-Chamberlain-Bill-Russell.jpg");
 }
 
 .intro-text.first {

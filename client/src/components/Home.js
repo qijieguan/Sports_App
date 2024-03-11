@@ -26,17 +26,17 @@ const Home = () => {
 
         const observer = new IntersectionObserver(function(entries, observer){
             entries.forEach(entry => {
+                let load_screen = entry.target.childNodes[0];
+
                 if (!entry.isIntersecting) {
                     entry.target?.classList.remove('intersected');
+                    load_screen?.classList.remove('appear');
+                    load_screen?.classList.remove('shrink'); 
                 }
                 else {
                     entry.target?.classList.add('intersected');
-                    entry.target.childNodes[0]?.classList.add('appear');
-                    entry.target.childNodes[0]?.classList.add('shrink');
-                    setTimeout(() => {
-                        entry.target.childNodes[0]?.classList.remove('appear');
-                        entry.target.childNodes[0]?.classList.remove('shrink');  
-                    }, 3000);
+                    load_screen?.classList.add('appear');
+                    load_screen?.classList.add('shrink');
                 }
             });
         }, options);
@@ -49,7 +49,7 @@ const Home = () => {
     return (
         <div className='home flex'>
             <Interface/>
-            <div className='intro-wrapper first animate'> 
+            <section className='intro-wrapper first animate'> 
                 <LoadScreen type={'section'}/>
                 <div className='intro-image first'/>
                 <div className='intro-text first'>
@@ -59,10 +59,10 @@ const Home = () => {
                         It is considered the most premier basketball league in the world. NBA teams are delegated to West and East conferences. 
                     </span>
                 </div>
-            </div>
+            </section>
 
-            <div className='intro-wrapper second animate'>  
-                <LoadScreen type={'section'}/>
+            <section className='intro-wrapper second animate'> 
+                <LoadScreen type={'section'}/> 
                 <div className='intro-image second'/>
                 <div className='intro-text second'>
                     <h1>NBA Playoffs</h1>
@@ -72,9 +72,9 @@ const Home = () => {
                         the winner will be crowded champions by winning the Larry O'Brien Championship Trophy.
                     </span>
                 </div>
-            </div>
+            </section>
 
-            <div className='intro-wrapper third animate'>  
+            <section className='intro-wrapper third animate'>  
                 <LoadScreen type={'section'}/>
                 <div className='intro-awards flex'>
                     <h1>NBA AWARDS</h1>
@@ -95,8 +95,8 @@ const Home = () => {
                             </div>
                             <div className='card flex'>
                                 <div className='card-title flex'>
-                                    <h1>Sixth Man of the Year</h1>
-                                    <span>SMOY</span>
+                                    <h1>SMOY</h1>
+                                    <span>Sixth Man of the Year</span>
                                 </div>
                                 <p>Given to the best performaning player coming from the bench on the regular season</p>
                             </div>
@@ -109,7 +109,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             <Footer/>
         </div> 
     )

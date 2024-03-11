@@ -30,7 +30,7 @@ const Interface = () => {
     }
 
     return (
-        <div className="interface flex animate">
+        <section className="interface flex animate">
             <LoadScreen type={'section'}/>
             <div className='interface-header'>
                 <h1>NBA {JSON.parse(sessionStorage.getItem('browse'))}</h1>
@@ -56,7 +56,7 @@ const Interface = () => {
             {browse === 'scores' &&
                 <Scores/>
             }
-        </div>
+        </section>
     );
 }
 

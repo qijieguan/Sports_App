@@ -1,11 +1,13 @@
 .footer {
+    margin-left: auto;
+    position: relative;
     justify-content: space-around;
     padding: 0 2.5vw;
     height: 100vh;
-    width: 100%;
+    width: 99%;
     color: white;
     background: rgb(10, 10, 10);
-    scroll-snap-align: start;
+    scroll-snap-align: center;
 }
 
 .main-logo {
@@ -39,9 +41,7 @@
 }
 
 @media (max-width: 50rem) {
-    .footer {
-        flex-wrap: wrap;
-    }
+    .footer { flex-wrap: wrap; }
     .api-citation, .contact { align-items: center; width: 90%; }
     .main-logo { margin-right: 0; }
 }

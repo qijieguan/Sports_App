@@ -53,9 +53,18 @@
     border-left: 1px solid rgb(77, 77, 77);
 }
 
-.nav-links {
+.nav-links-wrapper {
     position: absolute;
     inset: 0 0 auto auto;
+    height: 100%;
+    width: 0;
+    transform: translateX(99%);
+    transition: all 0.7s ease-in;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.nav-links {
     justify-content: center;
     flex-direction: column;
     row-gap: 2.5vh;
@@ -64,18 +73,11 @@
     text-transform: uppercase;
     color: white;
     background: rgb(37, 37, 37);
-    cursor: pointer;
-    transform: translateX(-99%);
-    transition: all 0.7s ease-in;
-    overflow: hidden;
-    z-index: 2;
 }
 
-.side-nav.expand .nav-links {
-    transform: translateX(99%);
-}
+.side-nav.expand .nav-links-wrapper {  width: max(20vw, 20rem); }
 
-.nav-link { width: 70%; column-gap: 1vw; }
+.nav-link { width: 70%; column-gap: 1vw; cursor: pointer; }
 .nav-link:hover { color: orange; }
 
 .nav-link > .icon { font-size: clamp(1rem, 1.25vw, 1.25rem); }
